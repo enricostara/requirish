@@ -50,8 +50,8 @@ In such a case, browserify could resolve this long _require()_ without any probl
 
 But, **how to avoid using the ../../../ relative path** to find the 'jet.js' module?
 
-Well, you could write the `require('requirish')._(module);` statement - **only one time for each module 
-and before other _require()_** - like the following:
+Well, you could write the `require('requirish')._(module);` statement ( **only one time for each module 
+and before other _require()_** ) like the following:
  
 ```js
 require('requirish')._(module);

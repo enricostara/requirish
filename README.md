@@ -46,12 +46,12 @@ var jetController = require('../../../lib/gui/controller/jet');
 ...
 ```
 
-In such a case, browserify could resolve this long _require()_ without any problem..
+In such a case, [browserify](http://browserify.org) could resolve this long _require()_ without any problem..
 
 But, **how to avoid using the ../../../ relative path** to find the 'jet.js' module?
 
-Well, you could write the `require('requirish')._(module);` statement ( **only one time for each module 
-and before other _require()_** ) like the following:
+Well, you could write the `require('requirish')._(module);` statement - **only one time for each module 
+and before other _require()_** - like the following:
  
 ```js
 require('requirish')._(module);
@@ -64,7 +64,9 @@ Fine! We will be happy to have now a **path-decoupled require()** but..
 **browserify** will stop to resolve this new smart version!
 
 And here **requirish** comes again to the rescue and **transforms** automagically all the smart _require()_ in the previous
-../../../ long version only for the browserify processor! So, you could run the following browserify command adding the transform: 
+../../../ long version only for the browserify processor! 
+
+So, you could run the following browserify command adding the transform: 
 
 ```bash
 $ browserify -t requirish test/gui/controller/jet.test.js > test-bundle.js

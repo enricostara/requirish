@@ -1,6 +1,6 @@
 {
     "name": "requirish",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Tool for avoiding the ../../../ relative paths problem, includes browserify-transform to rewrites require() for browser",
     "keywords": [
         "require",

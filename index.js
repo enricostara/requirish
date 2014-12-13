@@ -38,8 +38,18 @@ module.exports = function (file) {
     }
 };
 // Modify the module internal paths
+var nodeModulesRegExp;
+var lastPathSep;
 function _(module) {
-    console.log(module.filename);
-    (module.paths && module.paths.push('.'));
+    if (module.paths && module.filename) {
+        var pathSep = require('path').sep;
+        pathSep = pathSep === '/' ? pathSep : pathSep + pathSep;
+        nodeModulesRegExp = lastPathSep === pathSep ?
+            nodeModulesRegExp :
+            new RegExp('^(.*' + pathSep + 'node_modules' + pathSep + '[A-Za-z0-9_-]*)' + pathSep + '.*');
+        lastPathSep = pathSep;
+        var root = (module.filename.match(nodeModulesRegExp) || [undefined,'.'])[1];
+        module.paths.push(root);
+    }
 }
 module.exports._ = _;

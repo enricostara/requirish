@@ -1,7 +1,9 @@
 #requirish
 
 **_requirish_** is a tool for avoiding the ../../../ relative paths problem and includes a
-[browserify-transform](https://github.com/substack/browserify-handbook#transforms) to rewrites require() for browser.
+[browserify-transform](https://github.com/substack/browserify-handbook#transforms) to rewrites the _require()_ for browser.
+
+You can use it both for your applications and also if you are writing a library that could be referenced by others as dependency!
 
 ## Installation as dependency
 

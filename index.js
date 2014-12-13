@@ -48,8 +48,8 @@ function _(module) {
             nodeModulesRegExp :
             new RegExp('^(.*' + pathSep + 'node_modules' + pathSep + '[A-Za-z0-9_-]*)' + pathSep + '.*');
         lastPathSep = pathSep;
-        var root = (module.filename.match(nodeModulesRegExp) || [undefined,'.'])[1];
-        module.paths.push(root);
+        var root = (module.filename.match(nodeModulesRegExp) || [undefined, '.'])[1];
+        module.paths.splice(0, 0, root);
     }
 }
 module.exports._ = _;

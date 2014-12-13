@@ -15,7 +15,7 @@ describe('requirish', function () {
     describe('#_()', function () {
         it('should work on unix', function (done) {
             var module = {
-                paths: [],
+                paths: ['folder1'],
                 filename: '/Users/bob/MyApp/node_modules/sub-module1/node_modules/sub-module2/lib/index.js'
             };
             path.sep = '/';
@@ -39,7 +39,7 @@ describe('requirish', function () {
     describe('#_()', function () {
         it('should add the current dir', function (done) {
             var module = {
-                paths: [],
+                paths: ['folder1'],
                 filename: 'c:\\Users\\bob\\MyApp\\lib\\index.js'
             };
             path.sep = '\\';

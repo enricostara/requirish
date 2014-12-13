@@ -24,6 +24,10 @@
         "resolve": "latest",
         "through2": "latest"
     },
+    "devDependencies": {
+        "mocha": "latest",
+        "should": "latest"
+    },
     "main": "index",
     "engines": {
         "node": "0.10.x"

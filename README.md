@@ -3,9 +3,9 @@
 **_requirish_** is a tool for avoiding the ../../../ relative paths problem and includes a
 [browserify-transform](https://github.com/substack/browserify-handbook#transforms) to rewrites the _require()_ for browser.
 
-You can use it both for your applications and also if you are writing a library that could be referenced by others as dependency!
+You can use it both for your **application** and also if you are writing a **library** that could be referenced by others as dependency!
 
-## Installation as dependency
+## Installation
 
 ```bash
 $ npm install --save requirish
@@ -27,10 +27,10 @@ $ browserify -t requirish app.js > bundle.js
 
 ## Example
 
-Developing a not trivial **Node.js** application you will face a lot of annoying **relative paths** in your _require()_ as soon as 
-you start creating a module hierarchy under your ./lib source folder. 
+Developing a not trivial **Node.js** application/library you will face a lot of annoying **relative paths** in 
+your _require()_ as soon as you start creating a module hierarchy under your ./lib source folder. 
 
-In this example your app could have a 'jet.js' module like the following:
+Your application, in this example, could have a 'jet.js' module like the following:
 
 ```bash
 $ /Users/bob/my-app/lib/gui/controller/jet.js

@@ -1,35 +1,35 @@
 {
-    "name": "requirish",
-    "version": "0.2.0",
-    "description": "Tool for avoiding the ../../../ relative paths problem, includes browserify-transform to rewrites require() for browser",
-    "keywords": [
-        "require",
-        "local",
-        "relative",
-        "path",
-        "browserify",
-        "trasform"
-    ],
-    "author": "Enrico Stara <enrico.stara@gmail.com>",
-    "homepage": "https://github.com/enricostara/requirish",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/enricostara/requirish.git"
-    },
-    "bugs": {
-        "url": "https://github.com/enricostara/requirish/issues"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "resolve": "latest",
-        "through2": "latest"
-    },
-    "devDependencies": {
-        "mocha": "latest",
-        "should": "latest"
-    },
-    "main": "index",
-    "engines": {
-        "node": "0.10.x"
-    }
+  "name": "requirish",
+  "version": "0.3.0",
+  "description": "Tool for avoiding the ../../../ relative paths problem, includes browserify-transform to rewrites require() for browser",
+  "keywords": [
+    "require",
+    "local",
+    "relative",
+    "path",
+    "browserify",
+    "trasform"
+  ],
+  "author": "Enrico Stara <enrico.stara@gmail.com>",
+  "homepage": "https://github.com/enricostara/requirish",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/enricostara/requirish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enricostara/requirish/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "resolve": "latest",
+    "through2": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">0.10.30"
+  }
 }

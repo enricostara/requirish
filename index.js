@@ -1,7 +1,7 @@
 //     requirish
 //     Copyright 2014 Enrico Stara 'enrico.stara@gmail.com'
 //     Released under the MIT License
-//     https://github.com/enricostara/require-mainify
+//     https://github.com/enricostara/requirish
 
 // The require('...') regular expression
 var requireRegExp = /require\s*\(\s*(["'])(.*?)\1\s*\)\s*/g;
